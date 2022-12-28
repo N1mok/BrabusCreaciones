@@ -1,0 +1,608 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*-----Header----*/
+
+header {
+  height: 80px;
+  background-image: url(../img/header.jpg);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+}
+header h1 {
+  font-family: "Cinzel", serif;
+  font-weight: 650px;
+  color: antiquewhite;
+  margin-left: 20px;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline-block;
+  margin: 10px;
+}
+header ul li:hover {
+  padding: 5px;
+  background-color: antiquewhite;
+  transform: scale(1.1) rotateZ(20deg);
+  transition: 2s;
+  border: 2px solid black;
+  border-radius: 20%;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+header ul li a:hover {
+  color: black;
+}
+
+/*---Main index---*/
+
+main {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+}
+.bienvenidos {
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.bienvenidos div {
+  background-color: antiquewhite;
+  height: 400px;
+  width: 600px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  border: 1px solid black;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.bienvenidos div h2 {
+  text-decoration: underline;
+  margin: 30px;
+}
+
+.bienvenidos img {
+  height: 400px;
+  width: 300px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.nosotros {
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.nosotros div {
+  padding: 10px;
+  margin: 10px 0px 5px 0px;
+  height: 150px;
+  width: 600px;
+  background-color: antiquewhite;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.nosotros div a {
+  text-decoration: underline;
+  color: black;
+  font-family: "Cinzel", serif;
+}
+.nosotros div p {
+  margin: 10px;
+  padding: 10px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+}
+.productos .encabezadoProducto {
+  height: 100px;
+  width: 900px;
+  font-family: "Cinzel", serif;
+  font-size: 700;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+.encabezadoProducto h2 {
+  text-decoration: underline;
+}
+.reservas {
+  font-family: "Cinzel", serif;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+}
+.reservas .video {
+  padding: 10px;
+  margin: 150px 30px 0 10px;
+  width: 600px;
+  height: 380px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Cinzel", serif;
+}
+.reservas .video h2 {
+  text-align: center;
+}
+.reservas .video iframe {
+  height: 90%;
+  width: 75%;
+}
+.reservas .foto {
+  margin: 20px;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.reservas .foto div {
+  margin: 5px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.reservas .foto img {
+  width: 300px;
+  height: 300px;
+}
+.reservas .foto img:hover {
+  transform: scale(1.2);
+  transition: 2s;
+  border-radius: 20%;
+  box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+}
+.carousel {
+  height: 315px;
+  width: 508px;
+  font-family: "Cinzel", serif;
+}
+.carousel h2 {
+  text-align: center;
+  background-color: antiquewhite;
+  border: 2px solid black;
+}
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.623);
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.carousel-item img {
+  border: 2px solid black;
+  border-radius: 20px;
+}
+/*---footer---*/
+
+.footerSection {
+  background-image: url(../img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: auto auto auto;
+  border-top: 4px solid black;
+}
+
+.footerSection div img {
+  margin: 20px;
+  padding: 5px;
+  width: 100px;
+  height: 100px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+.footerSection .calificacion {
+  display: flex;
+  flex-direction: column;
+}
+.footerSection .social {
+  margin-right: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.footerSection .newsletter {
+  margin: 20px 10px 0px 10px;
+  padding: 30px;
+  height: fit-content;
+  font-family: "Cinzel", serif;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+/*----Main contacto----*/
+.contact {
+  height: 1000px;
+  background-image: url(../img/brabusContacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contactForm {
+  padding: 60px;
+  height: 400px;
+  width: 600px;
+  font-family: "Cinzel", serif;
+}
+.contactForm form {
+  margin: 10px;
+  padding: 5px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.contact .aCliente {
+  height: max-content;
+  text-align: center;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+
+/*----Main productos----*/
+
+.productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.productos .text {
+  margin: 30px;
+  padding: 10px;
+  font-family: "Cinzel", serif;
+  text-align: center;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.productos .text h2 {
+  text-decoration: underline;
+}
+.productos .fotos {
+  margin: 10px 0px 20px 0px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: 350px;
+  gap: 30px;
+}
+.productos .fotos img {
+  height: 300px;
+  width: 200px;
+  background-color: rgba(250, 235, 215, 0.589);
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.productos .fotos img:hover {
+  transform: scale(1.1);
+  transition: 2s;
+  box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+}
+
+/*----main quienesSomos----*/
+
+.sobreNosotros {
+  background-image: url(../img/quienesSomos.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sobreNosotros img {
+  height: 400px;
+  width: 500px;
+}
+.sobreNosotros div {
+  margin: 40px;
+  height: 400px;
+  width: 600px;
+  background-color: antiquewhite;
+  font-family: "Cinzel", serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.sobreNosotros div h2 {
+  margin: 10px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.sobreNosotros div p {
+  text-align: center;
+}
+
+/*----main trabajaConNosotros----*/
+
+.empleo {
+  background-image: url("../img/TrabajaConNosotros.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Cinzel", serif;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+}
+.empleo .presentacion {
+  margin: 30px;
+  height: 200px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 20px;
+}
+.empleo .presentacion h2 {
+  margin: 20px;
+  text-align: center;
+}
+.empleo .presentacion p {
+  margin: 10px;
+  text-align: center;
+}
+.empleo .box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.empleo .box div {
+  height: 300px;
+  width: 250px;
+  margin: 30px;
+  background-color: antiquewhite;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  border: 2px solid black;
+  border-radius: 20px;
+  box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+}
+.empleo .box div img {
+  height: 60px;
+  width: 60px;
+  margin: 5px 0px 5px 10px;
+}
+.empleo .box div h3 {
+  margin: 10px;
+}
+.empleo .box div p {
+  margin: 10px;
+}
+
+/*---Media Query---*/
+
+/*!---index----!*/
+@media screen and (max-width: 1080px) {
+  .reservas {
+    grid-template-columns: 1fr;
+  }
+  .reservas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .reservas .foto {
+    margin: 10px;
+  }
+  .footerSection .newsletter {
+    margin: 20px 0px 0px 5px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  header {
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footerSection {
+    grid-template-columns: auto auto;
+  }
+  .footerSection .social {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: -2;
+    grid-row-end: -1;
+  }
+  .footerSection .newsletter {
+    align-items: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: -2;
+    grid-row-end: -1;
+  }
+}
+@media screen and (max-width: 725px) {
+  .bienvenidos {
+    flex-direction: column;
+    text-align: center;
+  }
+  .bienvenidos div {
+    height: 300px;
+    width: 330px;
+    border-radius: 20px;
+  }
+  .bienvenidos div h2 {
+    margin: 10px;
+  }
+  .bienvenidos img {
+    border-radius: 20px;
+  }
+  .nosotros div {
+    margin: 5px;
+    padding: 0px;
+    width: 350px;
+    font-size: 15px;
+  }
+  .reservas .video {
+    padding: 0px;
+    margin: 20px;
+    width: 350px;
+    height: 500px;
+    flex-direction: column;
+  }
+  .reservas .video iframe {
+    width: 100%;
+    height: 70%;
+  }
+  .footerSection .newsletter {
+    margin: 5px;
+    padding: 15px;
+    width: 250px;
+    font-size: 10px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nosotros img {
+    width: 80%;
+    height: 50%;
+  }
+  .carousel {
+    width: 100%;
+  }
+  .footerSection {
+    grid-template-columns: 1fr;
+  }
+  .footerSection .calificacion {
+    width: 350px;
+    flex-direction: row;
+  }
+  .footerSection .social {
+    margin: 2px;
+    grid-column-start: 2;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  .footerSection .newsletter {
+    padding: 5px;
+    width: 300px;
+    grid-column-start: auto;
+    grid-column-end: auto;
+    grid-row-start: auto;
+    grid-row-end: auto;
+  }
+}
+@media screen and (max-width: 460px) {
+  .footerSection {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .footerSection div img {
+    margin: 5px;
+  }
+}
+
+/*!----productos----!*/
+
+@media screen and (max-width: 670px) {
+  .productos .fotos {
+    grid-template-columns: auto auto;
+  }
+}
+@media screen and (max-width: 440px) {
+  .productos .fotos {
+    grid-template-columns: auto;
+  }
+}
+
+/*!----sobreNosotros----!*/
+
+@media screen and (max-width: 950px) {
+  .sobreNosotros {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (max-width: 610px) {
+  .sobreNosotros img {
+    width: 80%;
+    height: 50%;
+  }
+  .sobreNosotros div {
+    width: fit-content;
+    height: 500px;
+  }
+}
+
+/*!----trabajaConNosotros---!*/
+
+@media screen and (max-width: 460px) {
+  .empleo .presentacion {
+    margin: 5px;
+    width: 350px;
+  }
+  .empleo .box {
+    width: 350px;
+  }
+}
