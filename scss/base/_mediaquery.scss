@@ -1,0 +1,208 @@
+/*---Media Query---*/
+/*!---index---!*/
+@media screen and (max-width: 1080px) {
+  .reservas {
+    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .foto {
+      margin: 10px;
+    }
+  }
+  .newsletter {
+    margin: 20px 0px 0px 5px;
+    padding: 10px;
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  header {
+    height: 150px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .footerSection {
+    grid-template-columns: auto auto;
+    .social {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: -2;
+      grid-row-end: -1;
+    }
+    .newsletter {
+      align-items: center;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: -2;
+      grid-row-end: -1;
+    }
+  }
+}
+
+@media screen and (max-width: 725px) {
+  .bienvenidos {
+    flex-direction: column;
+    text-align: center;
+    div {
+      height: 300px;
+      width: 330px;
+      border-radius: 20px;
+      h2 {
+        margin: 10px;
+      }
+    }
+    img {
+      border-radius: 20px;
+    }
+  }
+  .nosotros {
+    div {
+      margin: 5px;
+      padding: 0px;
+      width: 350px;
+      font-size: 15px;
+    }
+  }
+  .reservas {
+    .video {
+      padding: 0px;
+      margin: 20px;
+      width: 350px;
+      height: 500px;
+      flex-direction: column;
+      .iframe {
+        width: 100%;
+        height: 70%;
+      }
+    }
+  }
+  .footerSection {
+    .newsletter {
+      margin: 5px;
+      padding: 15px;
+      width: 250px;
+      font-size: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .nosotros {
+    img {
+      width: 80%;
+      height: 50%;
+    }
+  }
+  .carousel {
+    width: 100%;
+  }
+  .footerSection {
+    grid-template-columns: 1fr;
+    .calification {
+      width: 350px;
+      flex-direction: row;
+    }
+    .social {
+      margin: 2px;
+      grid-column-start: 2;
+      grid-column-end: 1;
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    .newsletter {
+      padding: 5px;
+      width: 300px;
+      grid-column-start: auto;
+      grid-column-end: auto;
+      grid-row-start: auto;
+      grid-row-end: auto;
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .footerSection {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    div {
+      img {
+        margin: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .footerSection {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    div {
+      img {
+        margin: 5px;
+      }
+    }
+  }
+}
+
+/*!----productos----!*/
+
+@media screen and (max-width: 670px) {
+  .productos {
+    .fotos {
+      grid-template-columns: auto auto;
+    }
+  }
+}
+@media screen and (max-width: 440px) {
+  .productos {
+    .fotos {
+      grid-template-columns: auto;
+    }
+  }
+}
+
+/*!---quienesSomos---!*/
+
+@media screen and (max-width: 950px) {
+  .sobreNosotros {
+    flex-direction: column-reverse;
+  }
+}
+
+@media screen and (max-width: 610px) {
+  .sobreNosotros {
+    img {
+      width: 80%;
+      height: 50%;
+    }
+    div {
+      width: fit-content;
+      height: 500px;
+    }
+  }
+}
+
+/*!----trabajaConNosotros---!*/
+
+@media screen and (max-width: 460px) {
+  .empleo {
+    .presentacion {
+      margin: 5px;
+      width: 350px;
+    }
+    .box {
+      width: 350px;
+    }
+  }
+}

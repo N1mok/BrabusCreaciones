@@ -1,0 +1,327 @@
+/*----MAIN----*/
+/*----index----*/
+main {
+  height: 100%;
+  width: 100%;
+  background-image: url(../img/main.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: cover;
+  .bienvenidos {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    div {
+      background-color: nth($colores, 2);
+      height: 400px;
+      width: 600px;
+      font-family: "Cinzel", serif;
+      text-align: map-get($kmap, tAli);
+      border: 1px solid nth($colores, 1);
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+      @extend %flexbox;
+      h2 {
+        text-decoration: map-get($kmap, tDeco);
+        margin: 30px;
+      }
+    }
+    img {
+      height: 400px;
+      width: 300px;
+      border-top-right-radius: 20px;
+      border-bottom-right-radius: 20px;
+    }
+  }
+  .nosotros {
+    margin: 30px;
+    @extend %flexbox;
+    div {
+      padding: 10px;
+      margin: 10px 0px 5px 0px;
+      height: 150px;
+      width: 600px;
+      background-color: nth($colores, 2);
+      text-align: map-get($kmap, tAli);
+      border: 1px solid nth($colores, 1);
+      border-radius: 20px;
+      a {
+        text-decoration: map-get($kmap, tDeco);
+        color: nth($colores, 1);
+        font-family: "Cinzel", serif;
+      }
+      p {
+        margin: 10px;
+        padding: 10px;
+        font-family: "Cinzel", serif;
+        text-align: map-get($kmap, tAli);
+      }
+    }
+  }
+  .productos {
+    .encabezadoProducto {
+      height: 100px;
+      width: 900px;
+      font-family: "Cinzel", serif;
+      font-size: map-get($kmap, fSize);
+      background-color: nth($colores, 2);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px solid nth($colores, 1);
+      border-radius: 20px;
+      h2 {
+        text-decoration: map-get($kmap, tDeco);
+      }
+    }
+  }
+  .reservas {
+    font-family: "Cinzel", serif;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    .video {
+      padding: 10px;
+      margin: 150px 30px 0 10px;
+      width: 600px;
+      height: 380px;
+      background-color: nth($colores, 2);
+      border: 2px solid nth($colores, 1);
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      font-family: "Cinzel", serif;
+      h2 {
+        text-align: map-get($kmap, tAli);
+      }
+      iframe {
+        height: 90%;
+        width: 75%;
+      }
+    }
+    .foto {
+      margin: 20px;
+      height: fit-content;
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      div {
+        margin: 5px;
+        background-color: nth($colores, 3);
+        border: 2px solid nth($colores, 1);
+        border-radius: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+      }
+      img {
+        width: 300px;
+        height: 300px;
+        &:hover {
+          transform: scale(1.2);
+          transition: 2s;
+          border-radius: 20%;
+          box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+          -webkit-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+          -moz-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+        }
+      }
+    }
+  }
+  .carousel {
+    height: 315px;
+    width: 508px;
+    font-family: "Cinzel", serif;
+    .carousel-caption {
+      background-color: rgba(0, 0, 0, 0.623);
+      border: 2px solid nth($colores, 1);
+      border-radius: 20px;
+    }
+    .carousel-item {
+      img {
+        border: 2px solid nth($colores, 1);
+        border-radius: 20px;
+      }
+    }
+  }
+}
+
+/*!---contacto---!*/
+
+.contact {
+  height: 1000px;
+  background-image: url(../img/brabusContacto.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  .contactForm {
+    padding: 60px;
+    height: 400px;
+    width: 600px;
+    font-family: "Cinzel", serif;
+    form {
+      margin: 10px;
+      padding: 5px;
+      background-color: nth($colores, 2);
+      border: 2px solid nth($colores, 1);
+      border-radius: 20px;
+      div {
+        margin: 5px;
+        text-align: map-get($kmap, tAli);
+      }
+    }
+  }
+  .aCliente {
+    height: max-content;
+    text-align: center;
+    background-color: nth($colores, 2);
+    border: 2px solid nth($colores, 1);
+    border-radius: 20px;
+  }
+}
+
+/*!---productos---!*/
+
+.productos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .text {
+    margin: 30px;
+    padding: 10px;
+    font-family: "Cinzel", serif;
+    text-align: map-get($kmap, tAli);
+    background-color: nth($colores, 2);
+    border: 2px solid nth($colores, 1);
+    border-radius: 20px;
+    @extend %flexbox;
+    h2 {
+      text-decoration: map-get($kmap, tDeco);
+    }
+  }
+  .fotos {
+    margin: 10px 0px 20px 0px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 350px;
+    gap: 30px;
+    img {
+      height: 300px;
+      width: 200px;
+      border: 2px solid nth($colores, 1);
+      border-radius: 20px;
+      &:hover {
+        transform: scale(1.1);
+        transition: 2s;
+        box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+        -webkit-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+      }
+    }
+  }
+}
+
+/*!---quienesSomos---!*/
+
+.sobreNosotros {
+  background-image: url(../img/quienesSomos.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    height: 400px;
+    width: 500px;
+  }
+  div {
+    margin: 40px;
+    height: 400px;
+    width: 600px;
+    background-color: nth($colores, 2);
+    font-family: "Cinzel", serif;
+    @extend %flexbox;
+    border: 2px solid nth($colores, 1);
+    border-radius: 20px;
+    h2 {
+      margin: 10px;
+      text-align: map-get($kmap, tAli);
+      text-decoration: map-get($kmap, tDeco);
+    }
+    p {
+      text-align: map-get($kmap, tAli);
+    }
+  }
+}
+
+/*!---trabajaConNosotros---!*/
+
+.empleo {
+  background-image: url("../img/TrabajaConNosotros.jpg");
+  background-size: cover;
+  background-position: center;
+  font-family: "Cinzel", serif;
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: auto;
+  .presentacion {
+    margin: 30px;
+    height: 200px;
+    width: 400px;
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
+    background-color: nth($colores, 2);
+    border: 2px solid nth($colores, 1);
+    border-radius: 20px;
+    h2 {
+      margin: 20px;
+      text-align: map-get($kmap, tAli);
+    }
+    p {
+      margin: 10px;
+      text-align: map-get($kmap, tAli);
+    }
+  }
+  .box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    div {
+      height: 300px;
+      width: 250px;
+      margin: 30px;
+      background-color: nth($colores, 2);
+      display: flex;
+      flex-direction: column;
+      justify-content: left;
+      border: 2px solid nth($colores, 1);
+      border-radius: 20px;
+      box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+      -webkit-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
+      img {
+        height: 60px;
+        width: 60px;
+        margin: 5px 0px 5px 10px;
+      }
+      h3 {
+        margin: 10px;
+        text-align: map-get($kmap, tAli);
+      }
+      p {
+        margin: 10px;
+        text-align: map-get($kmap, tAli);
+      }
+    }
+  }
+}

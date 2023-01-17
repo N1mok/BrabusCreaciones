@@ -1,0 +1,41 @@
+header {
+  height: 80px;
+  background-image: url(../img/header.jpg);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  h1 {
+    font-family: "Cinzel", serif;
+    font-weight: map-get($kmap, fWeight);
+    color: nth($colores, 2);
+    margin-left: 20px;
+  }
+  nav {
+    ul {
+      list-style: none;
+      li {
+        display: inline-block;
+        margin: 10px;
+        &:hover {
+          padding: 5px;
+          background-color: nth($colores, 2);
+          transform: scale(1.1) rotateZ(20deg);
+          transition: 2s;
+          border: 2px solid nth($colores, 1);
+          border-radius: 20%;
+        }
+        a {
+          text-decoration: none;
+          color: nth($colores, 2);
+          &:hover {
+            color: nth($colores, 1);
+          }
+        }
+      }
+    }
+  }
+}
