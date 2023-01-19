@@ -1,5 +1,5 @@
-/*----MAIN----*/
-/*----index----*/
+//*----MAIN
+//!----index
 main {
   height: 100%;
   width: 100%;
@@ -150,7 +150,7 @@ main {
   }
 }
 
-/*!---contacto---!*/
+//!---contacto
 
 .contact {
   height: 1000px;
@@ -187,7 +187,7 @@ main {
   }
 }
 
-/*!---productos---!*/
+//!---productos
 
 .productos {
   display: flex;
@@ -229,7 +229,7 @@ main {
   }
 }
 
-/*!---quienesSomos---!*/
+//!---quienesSomos
 
 .sobreNosotros {
   background-image: url(../img/quienesSomos.jpg);
@@ -262,7 +262,7 @@ main {
   }
 }
 
-/*!---trabajaConNosotros---!*/
+//!---trabajaConNosotros
 
 .empleo {
   background-image: url("../img/TrabajaConNosotros.jpg");

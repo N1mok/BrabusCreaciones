@@ -1,5 +1,5 @@
-/*---Media Query---*/
-/*!---index---!*/
+//Media Query
+//!-Index
 @media screen and (max-width: 1080px) {
   .reservas {
     grid-template-columns: 1fr;
@@ -141,21 +141,7 @@
   }
 }
 
-@media screen and (max-width: 460px) {
-  .footerSection {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column;
-    div {
-      img {
-        margin: 5px;
-      }
-    }
-  }
-}
-
-/*!----productos----!*/
+//!-productos
 
 @media screen and (max-width: 670px) {
   .productos {
@@ -172,7 +158,7 @@
   }
 }
 
-/*!---quienesSomos---!*/
+//!-quienesSomos
 
 @media screen and (max-width: 950px) {
   .sobreNosotros {
@@ -193,7 +179,7 @@
   }
 }
 
-/*!----trabajaConNosotros---!*/
+//!-trabajaConNosotros
 
 @media screen and (max-width: 460px) {
   .empleo {

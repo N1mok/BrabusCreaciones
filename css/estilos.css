@@ -43,8 +43,6 @@ header {
         header nav ul li a:hover {
           color: black; }
 
-/*----MAIN----*/
-/*----index----*/
 main {
   height: 100%;
   width: 100%;
@@ -167,7 +165,6 @@ main {
       border: 2px solid black;
       border-radius: 20px; }
 
-/*!---contacto---!*/
 .contact {
   height: 1000px;
   background-image: url(../img/brabusContacto.jpg);
@@ -198,7 +195,6 @@ main {
     border: 2px solid black;
     border-radius: 20px; }
 
-/*!---productos---!*/
 .productos {
   display: flex;
   justify-content: center;
@@ -232,7 +228,6 @@ main {
         -webkit-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75);
         -moz-box-shadow: 13px 20px 21px -1px rgba(0, 0, 0, 0.75); }
 
-/*!---quienesSomos---!*/
 .sobreNosotros {
   background-image: url(../img/quienesSomos.jpg);
   background-position: center;
@@ -258,7 +253,6 @@ main {
     .sobreNosotros div p {
       text-align: center; }
 
-/*!---trabajaConNosotros---!*/
 .empleo {
   background-image: url("../img/TrabajaConNosotros.jpg");
   background-size: cover;
@@ -354,8 +348,6 @@ footer .footerSection {
     border: 2px solid black;
     border-radius: 20px; }
 
-/*---Media Query---*/
-/*!---index---!*/
 @media screen and (max-width: 1080px) {
   .reservas {
     grid-template-columns: 1fr;
@@ -458,16 +450,6 @@ footer .footerSection {
     .footerSection div img {
       margin: 5px; } }
 
-@media screen and (max-width: 460px) {
-  .footerSection {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column; }
-    .footerSection div img {
-      margin: 5px; } }
-
-/*!----productos----!*/
 @media screen and (max-width: 670px) {
   .productos .fotos {
     grid-template-columns: auto auto; } }
@@ -476,7 +458,6 @@ footer .footerSection {
   .productos .fotos {
     grid-template-columns: auto; } }
 
-/*!---quienesSomos---!*/
 @media screen and (max-width: 950px) {
   .sobreNosotros {
     flex-direction: column-reverse; } }
@@ -489,7 +470,6 @@ footer .footerSection {
     width: fit-content;
     height: 500px; } }
 
-/*!----trabajaConNosotros---!*/
 @media screen and (max-width: 460px) {
   .empleo .presentacion {
     margin: 5px;
