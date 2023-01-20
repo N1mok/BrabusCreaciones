@@ -1,16 +1,33 @@
 /*---Footer---*/
 footer {
-  .footerSection {
-    background-image: url(../img/footer.jpg);
-    background-position: center;
-    background-size: cover;
-    display: grid;
-    grid-template-rows: 1fr;
-    grid-template-columns: auto auto auto;
-    border-top: 4px solid nth($colores, 1);
-    .calificacion {
-      display: flex;
-      flex-direction: column;
+  background-image: url(../img/footer.jpg);
+  background-position: center;
+  background-size: cover;
+  @include grid(grid, 1fr 1fr 1fr, auto auto);
+  border-top: 4px solid nth($colores, 1);
+  .calificacion {
+    display: flex;
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    img {
+      margin: 20px;
+      padding: 5px;
+      width: 100px;
+      height: 100px;
+      background-color: nth($colores, 2);
+      border: 2px solid nth($colores, 1);
+      border-radius: 20px;
+    }
+  }
+  .social {
+    margin-right: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    a {
       img {
         margin: 20px;
         padding: 5px;
@@ -21,31 +38,24 @@ footer {
         border-radius: 20px;
       }
     }
-    .social {
-      margin-right: 100px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      a {
-        img {
-          margin: 20px;
-          padding: 5px;
-          width: 100px;
-          height: 100px;
-          background-color: nth($colores, 2);
-          border: 2px solid nth($colores, 1);
-          border-radius: 20px;
-        }
-      }
-    }
-    .newsletter {
-      margin: 20px 10px 0px 10px;
-      padding: 30px;
-      height: fit-content;
-      font-family: "Cinzel", serif;
-      background-color: nth($colores, 2);
-      border: 2px solid nth($colores, 1);
-      border-radius: 20px;
-    }
+  }
+  .newsletter {
+    margin: 20px 10px 0px 10px;
+    padding: 30px;
+    height: 130px;
+    width: fit-content;
+    font-family: "Cinzel", serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: nth($colores, 2);
+    border: 2px solid nth($colores, 1);
+    border-radius: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: -1;
+    grid-row-end: -3;
   }
 }

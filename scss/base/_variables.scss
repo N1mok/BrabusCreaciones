@@ -19,3 +19,11 @@ $kmap: (
   justify-content: center;
   align-items: center;
 }
+
+//!-Mixins
+
+@mixin grid($grid, $column, $rows) {
+  display: $grid;
+  grid-template-columns: $column;
+  grid-template-rows: $rows;
+}

@@ -109,7 +109,7 @@ main {
   main .reservas {
     font-family: "Cinzel", serif;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto auto;
     grid-template-rows: auto; }
     main .reservas .video {
       padding: 10px;
@@ -307,18 +307,20 @@ main {
         text-align: center; }
 
 /*---Footer---*/
-footer .footerSection {
+footer {
   background-image: url(../img/footer.jpg);
   background-position: center;
   background-size: cover;
   display: grid;
-  grid-template-rows: 1fr;
-  grid-template-columns: auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
   border-top: 4px solid black; }
-  footer .footerSection .calificacion {
+  footer .calificacion {
     display: flex;
-    flex-direction: column; }
-    footer .footerSection .calificacion img {
+    flex-direction: column;
+    grid-column-start: 1;
+    grid-column-end: 2; }
+    footer .calificacion img {
       margin: 20px;
       padding: 5px;
       width: 100px;
@@ -326,12 +328,14 @@ footer .footerSection {
       background-color: antiquewhite;
       border: 2px solid black;
       border-radius: 20px; }
-  footer .footerSection .social {
-    margin-right: 100px;
+  footer .social {
+    margin-right: 90px;
     display: flex;
     justify-content: center;
-    align-items: flex-end; }
-    footer .footerSection .social a img {
+    align-items: flex-end;
+    grid-column-start: 2;
+    grid-column-end: 3; }
+    footer .social a img {
       margin: 20px;
       padding: 5px;
       width: 100px;
@@ -339,24 +343,35 @@ footer .footerSection {
       background-color: antiquewhite;
       border: 2px solid black;
       border-radius: 20px; }
-  footer .footerSection .newsletter {
+  footer .newsletter {
     margin: 20px 10px 0px 10px;
     padding: 30px;
-    height: fit-content;
+    height: 130px;
+    width: fit-content;
     font-family: "Cinzel", serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: antiquewhite;
     border: 2px solid black;
-    border-radius: 20px; }
+    border-radius: 20px;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: -1;
+    grid-row-end: -3; }
 
 @media screen and (max-width: 1080px) {
-  .reservas {
-    grid-template-columns: 1fr;
+  .reservas .video {
+    padding: 0px;
+    margin: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; }
-    .reservas .foto {
-      margin: 10px; }
+  .reservas .foto {
+    margin: 10px; }
   .newsletter {
     margin: 20px 0px 0px 5px;
     padding: 10px; } }
@@ -369,20 +384,37 @@ footer .footerSection {
     align-items: center;
     flex-direction: column; } }
 
+@media screen and (max-width: 980px) {
+  main .reservas {
+    grid-template-columns: auto;
+    place-items: center; } }
+
+@media screen and (max-width: 960px) {
+  footer {
+    grid-template-columns: 1fr 1fr; }
+    footer .social {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: -3;
+      grid-row-end: -2; }
+    footer .newsletter {
+      margin: 2px;
+      align-items: flex-start;
+      grid-column-start: 3;
+      grid-column-end: 2; } }
+
 @media screen and (max-width: 920px) {
-  .footerSection {
-    grid-template-columns: auto auto; }
-    .footerSection .social {
+  footer {
+    grid-template-columns: 1fr 1fr; }
+    footer .social {
       grid-column-start: 2;
       grid-column-end: 3;
-      grid-row-start: -2;
-      grid-row-end: -1; }
-    .footerSection .newsletter {
+      grid-row-start: -3;
+      grid-row-end: -2; }
+    footer .newsletter {
       align-items: center;
-      grid-column-start: 2;
-      grid-column-end: 3;
-      grid-row-start: -2;
-      grid-row-end: -1; } }
+      grid-column-start: 3;
+      grid-column-end: 2; } }
 
 @media screen and (max-width: 725px) {
   .bienvenidos {
@@ -409,7 +441,7 @@ footer .footerSection {
     flex-direction: column; }
     .reservas .video .iframe {
       width: 100%;
-      height: 70%; }
+      height: 100%; }
   .footerSection .newsletter {
     margin: 5px;
     padding: 15px;
@@ -441,14 +473,50 @@ footer .footerSection {
       grid-row-start: auto;
       grid-row-end: auto; } }
 
+@media screen and (max-width: 620px) {
+  main .reservas .video {
+    margin: 100px 0px 10px 0px;
+    padding: 5px;
+    width: 80%; } }
+
+@media screen and (max-width: 600px) {
+  main .bienvenidos div {
+    width: 100%;
+    height: 300px; }
+  main .nosotros div {
+    width: 460px; }
+  footer .social {
+    margin-right: 0px; }
+    footer .social a img {
+      margin: 10px; }
+  footer .newsletter {
+    font-weight: 100; } }
+
+@media screen and (max-width: 535px) {
+  main .carousel {
+    width: 90%;
+    place-items: center; }
+  footer .calificacion img {
+    width: 80px;
+    height: 100px; }
+  footer .social a img {
+    margin: 5px;
+    width: 80px;
+    height: 80px; }
+  footer .newsletter {
+    padding: 10px;
+    width: 240px;
+    height: 180px; } }
+
 @media screen and (max-width: 460px) {
-  .footerSection {
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    flex-direction: column; }
-    .footerSection div img {
-      margin: 5px; } }
+  main .nosotros div {
+    width: 350px;
+    height: 200px; }
+  footer .calificacion img {
+    margin: 10px 0px 20px 0px; }
+  footer .social a img {
+    height: 70px;
+    width: 70px; } }
 
 @media screen and (max-width: 670px) {
   .productos .fotos {
