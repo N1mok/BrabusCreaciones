@@ -417,6 +417,9 @@ footer {
       grid-column-end: 2; } }
 
 @media screen and (max-width: 725px) {
+  header nav ul li:hover {
+    padding: 0px;
+    transform: none; }
   .bienvenidos {
     flex-direction: column;
     text-align: center; }
